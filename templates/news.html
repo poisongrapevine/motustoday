@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Motus data is made to be analysed</h1>
+<p>Welcome to the data science corner! We publish interesting findings regularly.</p>
+<p>You can help the projects by contributing your results</p>
+<a href="/blog">
+   <button>Submit post</button>
+</a>
+
+{% for post in posts %}
+<div>
+<h2>{{post[0]}}</h2>
+<p>{{post[3]}}</p>
+<p>{{post[1]}}</p>
+
+    {% if post[2] %}
+<img src="{{'static/' + post[2]}}" align="middle" style='width:500px;'/>
+    {% endif %}
+    
+</div>
+{% endfor %}
+
+{% endblock %}

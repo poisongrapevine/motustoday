@@ -1,0 +1,21 @@
+{% extends 'datastudy.html' %}
+
+{% block type %}
+
+<h2>Post about your research!</h2>
+<p>Posts suggestions are manually reviewed. The feature is in test mode for now.</p>
+<form action="/post" method = 'GET'>
+        <fieldset>
+        Title<br>
+    <input type="text" name="title"><br>
+<label for="text">Describe your findings:</label>
+<textarea id="text" name="text" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies. 
+</textarea>
+Attach some graphs to make it more comprehensible<br>
+    <input type="file" accept="image/*" />
+        <input type="submit" value="Submit"/>
+        </fieldset>
+</form>
+
+{% endblock %}

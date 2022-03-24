@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<center>
+    <h2>Your result is...</h2>
+    <h1>{{ title }}</h1>
+    <img src="{{url_for('static', filename=image)}}" align="middle" />
+<p>{{ text }}</p>
+<p>Read more on Wiki: <a href={{ link }}>{{ title }}</a></p>
+    
+</center>
+    
+{% endblock %}

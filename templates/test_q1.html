@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<center>
+<p>Where would your dream vacation be?</p>
+    <form action="/process" method = 'GET'>
+        <fieldset>
+            <input type="radio" name="q1" value="North America">A retreat to the woods with magnificent lakes<br>
+            <input type="radio" name="q1" value="Europe">City or village with a bit of history and pretty architecture<br>
+            <input type="radio" name="q1" value="South">Seaside of course!<br>
+            <input type="submit" value="Next question"/>
+        </fieldset>
+    </form>
+    
+</center>
+
+{% endblock %}
+    

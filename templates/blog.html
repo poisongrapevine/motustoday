@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Post about your research!</h2>
+<p>You need a researcher password to post on the <a href="/leaderboard">News</a> tab. The feature is in test mode for now.</p>
+<form action="/post" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        
+        Title<br>
+        <textarea id="texter" name="title" rows="1" cols="50"></textarea><br>
+        
+        Please describe your findings<br>
+        <textarea id="texter" name="text" rows="4" cols="50"></textarea><br>
+         
+        Attach some graphs to make it more comprehensible<br>
+        <input type="file" accept="image/*" name="image"/><br>
+        
+        PASSWORD <br>
+        <input type="text" name="password"><br>
+        <input type="submit" value="Submit"/>
+    </fieldset>
+</form>
+{% endblock %}

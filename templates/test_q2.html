@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<center>
+<p>What is the closest to your favourite aesthetic?</p>
+    <form action="/process" method = 'GET'>
+        <fieldset>
+            <input type="radio" name="q2" value="mammals">Soft/light academia<br>
+            <input type="radio" name="q2" value="bats">Goth/dark academia<br>
+            <input type="radio" name="q2" value="birds">Cottagecore<br>
+            <input type="radio" name="q2" value="insects">Emo/grunge<br>
+            <input type="radio" name="q2" value="mammals">Don't know, just vibing<br>
+            <input type="submit" value="See the results"/>
+        </fieldset>
+    </form>
+    
+</center>
+    
+{% endblock %}
