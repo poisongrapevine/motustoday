@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Want to track an animal?</h1>
+<p>Fill in some specifics so that we could choose a Motus deployment.</p>
+
+<form action="/continent" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        
+        <label for="continent">Choose a continent:</label>
+
+        <select name="continent" id="continent">
+          <option value="Africa">Africa</option>
+          <option value="Antarctica">Antarctica</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="North America">North America</option>
+          <option value="Oceania">Oceania</option>
+          <option value="South America">South America</option>
+          <option value="No continent (open ocean)">Seven seas (open ocean)</option>
+        </select><br>
+        <input type="submit" value="Submit"/>
+    </fieldset>
+</form>
+        
+{% endblock %}

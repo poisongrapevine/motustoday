@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Want to track an animal?</h1>
+<p>Fill in some specifics so that we could choose a Motus deployment.</p>
+
+<form action="/species" method="POST" enctype="multipart/form-data">
+    <fieldset>
+        
+        <label for="continent">Your continent:</label>
+        <select name="continent" id="continent">
+          <option value="{{continent}}">{{continent}}</option>
+        </select><br>
+        
+        <label for="group">Your group:</label>
+        <select name="group" id="group">
+          <option value="{{group}}">{{group}}</option>
+        </select><br>
+        
+        <label for="species">Choose a species:</label>
+
+        <select name="species" id="species">
+           {% if species != [] %}
+            {% for sp in species %}
+          <option value="{{sp}}">{{sp}}</option>
+            {% endfor %}
+            
+           {% else %}
+            <p>Sorry, no animals here :(</p>
+           {% endif %}
+        </select><br>
+            <input type="submit" value="Submit"/>
+    </fieldset>
+</form>
+
+{% endblock %}
