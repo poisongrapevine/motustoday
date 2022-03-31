@@ -1,6 +1,6 @@
 # Motus Today
 
-This is a website representing [Motus](https://motus.org) wildlife tracking database. [Motus Today](http://thnlgrlivrlvdwsbrnwthrssnhrys.pythonanywhere.com) is hosted on pythonanywhere/
+This is a website representing [Motus](https://motus.org) wildlife tracking database. [Motus Today](http://thnlgrlivrlvdwsbrnwthrssnhrys.pythonanywhere.com) is hosted on pythonanywhere.
 
 ## Site navigation
 
